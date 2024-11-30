@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BackgroundScene from '../components/BackgroundScene';
 
 const Projects = () => {
@@ -29,8 +30,16 @@ const Projects = () => {
     return (
         <>
             <BackgroundScene />
-            <div className="relative min-h-screen z-10 py-16">
-                <div className="container mx-auto px-4">
+            <div className="relative min-h-screen z-10">
+                {/* Bouton de retour */}
+                <Link
+                    to="/"
+                    className="fixed top-6 left-6 bg-slate-800/80 hover:bg-slate-700/80 text-white px-4 py-2 rounded-lg transition-colors shadow-lg backdrop-blur-sm"
+                >
+                    ← Accueil
+                </Link>
+
+                <div className="container mx-auto px-4 py-16">
                     <h1 className="text-5xl font-bold mb-12 text-white text-center">Mes Projets</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projects.map(project => (

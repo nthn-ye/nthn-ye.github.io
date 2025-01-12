@@ -10,7 +10,7 @@
 <header class="hero">
     <div class="container">
         <h1>Bonjour, je suis <span class="highlight">Nathan Dupin</span></h1>
-        <p>Développeur informatique</p>
+        <p>Développeur Informatique</p>
         <a href="#about" class="btn">Découvrir</a>
     </div>
 </header>
@@ -19,7 +19,7 @@
     <div class="container">
         <h2>À Propos de Moi</h2>
         <div class="about-content">
-            <p>Bonjour ! Je m'appelle Nathan et je suis étudiant en deuxième année de BUT Informatique à l'IUT de Montpellier-Sète. Je suis actuellement en parcours Déploiement d'Applications Communicantes et Sécurisées.</p>
+            <p>Bonjour, je m'appelle Nathan et je suis étudiant en deuxième année de BUT Informatique à l'IUT de Montpellier-Sète. Je suis actuellement en parcours Déploiement d'Applications Communicantes et Sécurisées.</p>
             <p>Je développe des compétences en programmation et en optimisation logicielle, avec un intérêt particulier pour les langages de bas niveau comme le C++ et le Rust. Mon objectif est de travailler plus tard dans le domaine des moteurs de jeu vidéo, que ce soit dans leur création, leur maintenance ou leur évolution.</p>
             <p>Participer à des événements comme la Nuit de l'Info ou des Game Jams m'a permis de travailler en équipe sur des projets concrets et de m'améliorer dans la résolution de problèmes complexes. Ces expériences m'ont également aidé à découvrir de nouvelles technologies et à mieux collaborer sous pression.</p>
             <p>En dehors de mes études, je suis passionné par les jeux vidéo et le cinéma. J'aime aussi pratiquer la randonnée, une activité qui m'aide à me détendre et à trouver de nouvelles idées.</p>
@@ -58,8 +58,19 @@
 <div id="project-modal" class="modal hidden">
     <div class="modal-content">
         <span class="close-modal">&times;</span>
-        <h3 id="modal-title"></h3>
-        <p id="modal-description"></p>
+        <h3 id="modal-title" class="modal-title"></h3>
+        <div id="modal-details">
+            <ul>
+                <li><strong>Dates du projet :</strong> <span id="modal-date"></span></li>
+                <li><strong>Durée du projet :</strong> <span id="modal-duration"></span></li>
+                <li><strong>Contraintes de travail :</strong> <span id="modal-team"></span></li>
+            </ul>
+        </div>
+        <p id="modal-description" class="modal-description"></p>
+        <div id="modal-learnings">
+            <h4>Apprentissages Réalisés</h4>
+            <ul id="learning-list"></ul>
+        </div>
     </div>
 </div>
 

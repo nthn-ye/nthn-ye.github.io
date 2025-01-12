@@ -136,6 +136,43 @@ footer {
     display: none !important;
 }
 
+.modal-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#modal-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+#modal-details ul li {
+    margin-bottom: 10px;
+}
+
+.modal-description {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#modal-learnings {
+    margin-top: 20px;
+}
+
+#modal-learnings h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#learning-list {
+    list-style: disc;
+    padding-left: 20px;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

@@ -15,3 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const discoverButton = document.querySelector(".btn");
+    const aboutSection = document.querySelector("#about");
+
+    // Gestion de l'animation de défilement
+    discoverButton.addEventListener("click", (e) => {
+        e.preventDefault(); // Empêche l'action par défaut
+        aboutSection.scrollIntoView({
+            behavior: "smooth" // Défilement fluide
+        });
+    });
+});

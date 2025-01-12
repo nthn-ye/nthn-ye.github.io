@@ -10,7 +10,7 @@
 <header class="hero">
     <div class="container">
         <h1>Bonjour, je suis <span class="highlight">Nathan Dupin</span></h1>
-        <p>Développeur informatique passionné</p>
+        <p>Développeur informatique</p>
         <a href="#about" class="btn">Découvrir</a>
     </div>
 </header>
@@ -23,11 +23,10 @@
             <p>Je développe des compétences en programmation et en optimisation logicielle, avec un intérêt particulier pour les langages de bas niveau comme le C++ et le Rust. Mon objectif est de travailler plus tard dans le domaine des moteurs de jeu vidéo, que ce soit dans leur création, leur maintenance ou leur évolution.</p>
             <p>Participer à des événements comme la Nuit de l'Info ou des Game Jams m'a permis de travailler en équipe sur des projets concrets et de m'améliorer dans la résolution de problèmes complexes. Ces expériences m'ont également aidé à découvrir de nouvelles technologies et à mieux collaborer sous pression.</p>
             <p>En dehors de mes études, je suis passionné par les jeux vidéo et le cinéma. J'aime aussi pratiquer la randonnée, une activité qui m'aide à me détendre et à trouver de nouvelles idées.</p>
-            <p>À long terme, j'aimerais contribuer à des projets dans le domaine des moteurs de jeu et explorer les technologies qui les rendent plus performants et innovants.</p>
             <div class="btn-group">
                 <a href="/ressources/CV.pdf" class="btn" download>Télécharger Mon CV</a>
                 <a href="https://github.com/nthn-ye" class="btn" target="_blank">GitHub</a>
-                <a href="www.linkedin.com/in/nathan-dupin-7b05bb264" class="btn" target="_blank">LinkedIn</a>
+                <a href="https://linkedin.com/in/nathan-dupin-7b05bb264" class="btn" target="_blank">LinkedIn</a>
             </div>
         </div>
     </div>
@@ -37,30 +36,36 @@
     <div class="container">
         <h2>Mes Projets</h2>
         <div class="projects">
-            <div class="project-card">
+            <div class="project-card" data-project="scoleton">
                 <h3>Scoleton</h3>
                 <p>Clone de Scodoc permettant un suivi de scolarité universitaire.</p>
-                <p><strong>Technologies :</strong> PHP, SQL, PSQL, architecture MVC, Gitlab.</p>
+                <button class="btn show-modal" data-project="scoleton">Voir Détails</button>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-project="nuit-info">
                 <h3>Nuit de l’Info 2023</h3>
                 <p>Site web sensibilisant aux maladies sexuellement transmissibles.</p>
-                <p><strong>Technologies :</strong> Symfony, HTML/CSS.</p>
+                <button class="btn show-modal" data-project="nuit-info">Voir Détails</button>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-project="trains">
                 <h3>Trains</h3>
                 <p>Jeu de plateau japonais développé en Java.</p>
-                <p><strong>Technologies :</strong> Java, JavaFX, Gitlab.</p>
+                <button class="btn show-modal" data-project="trains">Voir Détails</button>
             </div>
         </div>
     </div>
 </section>
 
+<div id="project-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
 <section id="contact" class="section">
     <div class="container">
         <h2>Contact</h2>
-        <p><a href="https://linkedin.com/in/nathan-dupin-7b05bb264" target="_blank">LinkedIn</a></p>
-        <p><a href="https://github.com/nthn-ye" target="_blank">GitHub</a></p>
         <p>Email : <a href="mailto:nath.dup@protonmail.com">nath.dup@protonmail.com</a></p>
     </div>
 </section>

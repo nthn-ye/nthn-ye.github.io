@@ -13,14 +13,14 @@ const Home = () => {
 
                     <div className="flex flex-wrap justify-center gap-4">
                         <a
-                            href="/cv.pdf"
+                            href="../ressources/CV.pdf"
                             download
                             className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg transition-colors shadow-lg"
                         >
                             Télécharger mon CV
                         </a>
                         <a
-                            href="https://linkedin.com/in/votre-profil"
+                            href="www.linkedin.com/in/nathan-dupin-7b05bb264"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-colors shadow-lg"
@@ -28,7 +28,7 @@ const Home = () => {
                             LinkedIn
                         </a>
                         <a
-                            href="https://github.com/votre-profil"
+                            href="https://github.com/nthn-ye"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded-lg transition-colors shadow-lg"

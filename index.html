@@ -7,47 +7,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+<header class="hero">
     <div class="container">
-        <h1>Nathan Dupin</h1>
+        <h1>Bonjour, je suis <span class="highlight">Nathan Dupin</span></h1>
         <p>Développeur Informatique Passionné</p>
-        <nav>
-            <ul>
-                <li><a href="#about">À Propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <a href="#about" class="btn">Découvrir</a>
     </div>
 </header>
 
 <section id="about" class="section">
     <div class="container">
         <h2>À Propos de Moi</h2>
-        <p>Passionné par les technologies innovantes, je mets mes compétences au service de projets ambitieux. En deuxième année de BUT Informatique à l'IUT de Montpellier, je me spécialise dans la conception de solutions web et la gestion de bases de données.</p>
-        <p><strong>Centres d'intérêt :</strong> Randonnée, Jeux vidéo, Cinématographie.</p>
-        <p><strong>Vision :</strong> Après le BUT, je souhaite intégrer une entreprise pour développer des solutions sur mesure en suivant les méthodologies agiles.</p>
-        <a href="Nathan_Dupin_CV.pdf" class="btn" download>Télécharger Mon CV</a>
+        <div class="about-content">
+            <p>Passionné par les technologies innovantes, je suis actuellement en 2ème année de BUT Informatique à l'IUT de Montpellier. Je me spécialise dans la conception de solutions sur mesure en suivant les méthodologies agiles.</p>
+            <p><strong>Centres d'intérêt :</strong> Randonnée, Jeux vidéo, Cinématographie.</p>
+            <p><strong>Vision :</strong> Après le BUT, mon objectif est de développer des solutions technologiques impactantes.</p>
+            <a href="Nathan_Dupin_CV.pdf" class="btn" download>Télécharger Mon CV</a>
+        </div>
     </div>
 </section>
 
 <section id="projects" class="section">
     <div class="container">
         <h2>Mes Projets</h2>
-        <div class="project">
-            <h3>Scoleton</h3>
-            <p>Clone de Scodoc permettant un suivi de scolarité universitaire.</p>
-            <p><strong>Techniques :</strong> PHP, SQL, PSQL, architecture MVC, Gitlab.</p>
-        </div>
-        <div class="project">
-            <h3>Nuit de l’Info 2023</h3>
-            <p>Site web sensibilisant aux maladies sexuellement transmissibles.</p>
-            <p><strong>Techniques :</strong> Symfony, HTML/CSS.</p>
-        </div>
-        <div class="project">
-            <h3>Trains</h3>
-            <p>Jeu de plateau japonais développé en Java.</p>
-            <p><strong>Techniques :</strong> Java, JavaFX, Gitlab.</p>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Scoleton</h3>
+                <p>Clone de Scodoc permettant un suivi de scolarité universitaire.</p>
+                <p><strong>Technologies :</strong> PHP, SQL, PSQL, architecture MVC, Gitlab.</p>
+            </div>
+            <div class="project-card">
+                <h3>Nuit de l’Info 2023</h3>
+                <p>Site web sensibilisant aux maladies sexuellement transmissibles.</p>
+                <p><strong>Technologies :</strong> Symfony, HTML/CSS.</p>
+            </div>
+            <div class="project-card">
+                <h3>Trains</h3>
+                <p>Jeu de plateau japonais développé en Java.</p>
+                <p><strong>Technologies :</strong> Java, JavaFX, Gitlab.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -57,6 +55,7 @@
         <h2>Contact</h2>
         <p><a href="https://linkedin.com/in/nathan-dupin-7b05bb264" target="_blank">LinkedIn</a></p>
         <p><a href="https://github.com/nthn-ye" target="_blank">GitHub</a></p>
+        <p>Email : <a href="mailto:nath.dup@protonmail.com">nath.dup@protonmail.com</a></p>
     </div>
 </section>
 

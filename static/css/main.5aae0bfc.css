@@ -1,0 +1,2 @@
+@tailwind base;@tailwind components;@tailwind utilities;@layer base{body{@apply bg-gray-900 text-gray-100}}@layer components{.btn,.btn-primary,.btn-secondary{@apply border border-white hover:bg-white hover:text-black}}@keyframes fadeIn{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.animate-fadeIn{animation:fadeIn .5s ease-out forwards}
+/*# sourceMappingURL=main.5aae0bfc.css.map*/

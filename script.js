@@ -87,19 +87,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalTeam = document.getElementById("modal-team");
     const modalDescription = document.getElementById("modal-description");
     const learningList = document.getElementById("learning-list");
+    const traceList = document.getElementById("trace-list");
     const closeModal = document.querySelector(".close-modal");
 
+    // Détails des projets
     const projectDetails = {
         scoleton: {
             title: "Scoleton",
             date: "Septembre 2024 - Janvier 2025",
             duration: "4 mois",
-            team: "Équipe de 4 personnes",
+            team: "Équipe de 3 personnes",
             description: "Clone de Scodoc permettant un suivi de scolarité universitaire. Ce projet m'a permis d'approfondir l'architecture MVC, la gestion de bases de données relationnelles avec PostgreSQL, et l'intégration de concepts de sécurité comme le chiffrement RSA.",
             learnings: [
-                "Comprendre l'architecture MVC",
+                "Approfondir l'architecture MVC",
                 "Gérer des bases de données relationnelles",
                 "Appliquer des concepts de sécurité (chiffrement RSA)"
+            ],
+            traces: [
+                { name: "Documentation technique", url: "https://example.com/scoleton-doc" },
+                { name: "Cahier des charges", url: "https://example.com/scoleton-cdc" }
             ]
         },
         "nuit-info": {
@@ -111,7 +117,11 @@ document.addEventListener("DOMContentLoaded", () => {
             learnings: [
                 "Renforcer mes compétences en HTML/CSS",
                 "Découvrir Symfony",
-                "Travailler en équipe"
+                "Travailler sous pression en équipe"
+            ],
+            traces: [
+                { name: "Code source GitHub", url: "https://github.com/nuit-info-2023" },
+                { name: "Présentation finale", url: "https://example.com/nuit-info-presentation" }
             ]
         },
         trains: {
@@ -124,6 +134,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Maîtriser la programmation orientée objet en Java",
                 "Créer une interface graphique avec JavaFX",
                 "Utiliser GitLab pour la gestion de projet"
+            ],
+            traces: [
+                { name: "Rapport de projet", url: "https://example.com/trains-rapport" },
+                { name: "Code source GitHub", url: "https://github.com/trains-game" }
             ]
         }
     };
@@ -140,11 +154,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 modalTeam.textContent = project.team;
                 modalDescription.textContent = project.description;
 
+                // Ajouter les apprentissages
                 learningList.innerHTML = "";
                 project.learnings.forEach(learning => {
                     const listItem = document.createElement("li");
                     listItem.textContent = learning;
                     learningList.appendChild(listItem);
+                });
+
+                // Ajouter les traces
+                traceList.innerHTML = "";
+                project.traces.forEach(trace => {
+                    const listItem = document.createElement("li");
+                    const link = document.createElement("a");
+                    link.textContent = trace.name;
+                    link.href = trace.url;
+                    link.target = "_blank";
+                    listItem.appendChild(link);
+                    traceList.appendChild(listItem);
                 });
 
                 modal.classList.remove("hidden");

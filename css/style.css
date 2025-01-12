@@ -173,6 +173,30 @@ footer {
     padding-left: 20px;
 }
 
+#modal-traces {
+    margin-top: 20px;
+}
+
+#modal-traces h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#trace-list {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+#trace-list li a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#trace-list li a:hover {
+    color: #0056b3;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

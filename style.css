@@ -1,62 +1,25 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f8f9fa;
-    color: #333;
-}
-
-.hero {
-    background: linear-gradient(45deg, #007BFF, #6610f2);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero .highlight {
-    color: #ffdd57;
-}
-
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.project-card {
-    background: white;
+.about-content {
+    text-align: left;
     margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 800px;
+    line-height: 1.8;
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+.about-content p {
+    margin-bottom: 15px;
 }
 
-.btn {
+.about-content .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
     background: #007BFF;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 
-.btn:hover {
+.about-content .btn:hover {
     background: #0056b3;
-}
-
-footer {
-    background: #343a40;
-    color: white;
-    padding: 10px;
-    text-align: center;
 }

@@ -94,8 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Scoleton",
             date: "Septembre 2024 - Janvier 2025",
             duration: "4 mois",
-            team: "Équipe de 3 personnes",
-            description: "Clone de Scodoc permettant un suivi de scolarité universitaire. Ce projet m'a permis d'apprendre l'architecture MVC, la gestion de bases de données relationnelles avec PostgreSQL, et l'intégration de concepts de sécurité comme le chiffrement RSA.",
+            team: "Équipe de 4 personnes",
+            description: "Clone de Scodoc permettant un suivi de scolarité universitaire. Ce projet m'a permis d'approfondir l'architecture MVC, la gestion de bases de données relationnelles avec PostgreSQL, et l'intégration de concepts de sécurité comme le chiffrement RSA.",
             learnings: [
                 "Comprendre l'architecture MVC",
                 "Gérer des bases de données relationnelles",
@@ -111,14 +111,14 @@ document.addEventListener("DOMContentLoaded", () => {
             learnings: [
                 "Renforcer mes compétences en HTML/CSS",
                 "Découvrir Symfony",
-                "Travailler sous pression en équipe"
+                "Travailler en équipe"
             ]
         },
         trains: {
             title: "Trains",
             date: "Janvier 2024 - Mai 2024",
             duration: "5 mois",
-            team: "Individuel",
+            team: "Équipe de 2 personnes",
             description: "Jeu de plateau japonais développé en Java, mettant l'accent sur la programmation orientée objet et l'interface graphique.",
             learnings: [
                 "Maîtriser la programmation orientée objet en Java",

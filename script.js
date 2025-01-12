@@ -1,1 +1,3 @@
-console.log("Bienvenue sur mon portfolio !");
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Bienvenue sur le portfolio de Nathan Dupin !");
+});
